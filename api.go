@@ -39,11 +39,11 @@ import (
 	"sync"
 	"time"
 
-	"golang.org/x/net/publicsuffix"
-
+	"github.com/golang/glog"
 	"github.com/minio/minio-go/pkg/credentials"
 	"github.com/minio/minio-go/pkg/s3signer"
 	"github.com/minio/minio-go/pkg/s3utils"
+	"golang.org/x/net/publicsuffix"
 )
 
 // Client implements Amazon S3 compatible methods.
@@ -307,6 +307,7 @@ func privateNew(endpoint string, creds *credentials.Credentials, secure bool, re
 		region = s3utils.GetRegionFromURL(*clnt.endpointURL)
 	}
 	clnt.region = region
+	glog.Infof("HBSEO  privateNew clnt.region %s\n", clnt.region)
 
 	// Instantiate bucket location cache.
 	clnt.bucketLocCache = newBucketLocationCache()
@@ -537,6 +538,7 @@ func (c Client) executeMethod(ctx context.Context, method string, metadata reque
 	var bodySeeker io.Seeker // Extracted seeker from io.Reader.
 	var reqRetry = MaxRetry  // Indicates how many times we can retry the request
 
+	glog.Infof("HBSEO executeMethod bucketName %s\n", metadata.bucketName)
 	if metadata.contentBody != nil {
 		// Check if body is seekable then it is retryable.
 		bodySeeker, isRetryable = metadata.contentBody.(io.Seeker)
@@ -572,6 +574,7 @@ func (c Client) executeMethod(ctx context.Context, method string, metadata reque
 		// error until maxRetries have been exhausted, retry attempts are
 		// performed after waiting for a given period of time in a
 		// binomial fashion.
+		glog.Infof("HBSEO executeMethod newRetryTimer\n")
 		if isRetryable {
 			// Seek back to beginning for each attempt.
 			if _, err = bodySeeker.Seek(0, 0); err != nil {
@@ -637,11 +640,16 @@ func (c Client) executeMethod(ctx context.Context, method string, metadata reque
 		//
 		// Additionally we should only retry if bucketLocation and custom
 		// region is empty.
+		glog.Infof("HBSEO executeMethod newRetryTimer c.region:%s\n", c.region)
+		glog.Infof("HBSEO executeMethod newRetryTimer metadata.bucketLocation:%s\n", metadata.bucketLocation)
 		if metadata.bucketLocation == "" && c.region == "" {
+			glog.Infof("HBSEO executeMethod newRetryTimer errResponse.Code:%s\n", errResponse.Code)
 			if errResponse.Code == "AuthorizationHeaderMalformed" || errResponse.Code == "InvalidRegion" {
+				glog.Infof("HBSEO executeMethod newRetryTimer errResponse.Region:%s\n", errResponse.Region)
 				if metadata.bucketName != "" && errResponse.Region != "" {
 					// Gather Cached location only if bucketName is present.
 					if _, cachedLocationError := c.bucketLocCache.Get(metadata.bucketName); cachedLocationError != false {
+						glog.Infof("HBSEO executeMethod newRetryTimer cachedLocationError != false\n")
 						c.bucketLocCache.Set(metadata.bucketName, errResponse.Region)
 						continue // Retry.
 					}
@@ -673,10 +681,12 @@ func (c Client) newRequest(method string, metadata requestMetadata) (req *http.R
 	}
 
 	location := metadata.bucketLocation
+	glog.Infof("HBSEO  newRequest location-1:%s \n", location)
 	if location == "" {
 		if metadata.bucketName != "" {
 			// Gather location only if bucketName is present.
 			location, err = c.getBucketLocation(metadata.bucketName)
+			glog.Infof("HBSEO  newRequest location-2:%s \n", location)
 			if err != nil {
 				if ToErrorResponse(err).Code != "AccessDenied" {
 					return nil, err
@@ -686,6 +696,7 @@ func (c Client) newRequest(method string, metadata requestMetadata) (req *http.R
 			// to possible locations based on endpoint URL. This can usually
 			// happen when GetBucketLocation() is disabled using IAM policies.
 		}
+		glog.Infof("HBSEO  newRequest c.region:%s \n", c.region)
 		if location == "" {
 			location = getDefaultLocation(*c.endpointURL, c.region)
 		}

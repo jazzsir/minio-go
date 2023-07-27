@@ -1,0 +1,8 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+CCESS_KEY	Makefile	/^	@SERVER_ENDPOINT=play.minio.io:9000 ACCESS_KEY=Q3AM3UQ867SPQQA43P2F SECRET_KEY=zuf+tfteSlswRu7BJ86wekitnifILbZam1KYY3TG ENABLE_HTTPS=1 MINT_MODE=full go run functional_tests.go$/;"	m
+CCESS_KEY	Makefile	/^	@SERVER_ENDPOINT=play.minio.io:9000 ACCESS_KEY=Q3AM3UQ867SPQQA43P2F SECRET_KEY=zuf+tfteSlswRu7BJ86wekitnifILbZam1KYY3TG ENABLE_HTTPS=1 MINT_MODE=full go test -race -v .\/...$/;"	m
