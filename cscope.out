@@ -3393,7 +3393,7 @@ Mes§ge
 
 95 
 	g»pÜtIssue
- = "Please„eporthis issue‡t https://github.com/minio/minio-go/issues."
+ = "Please„eporthis issue‡t https://github.com/jazzsir/minio-go/issues."
 
 100 
 func
@@ -4761,7 +4761,7 @@ ex³ùedE¼Re¥Ú£
 
 141 
 	`g’Inv®idE¼Ü
-("Response isƒmpty. " + "Please„eporthis issue‡t https://github.com/minio/minio-go/issues."),
+("Response isƒmpty. " + "Please„eporthis issue‡t https://github.com/jazzsir/minio-go/issues."),
 
 142 
 	`decodeXMLE¼Ü
@@ -40675,7 +40675,7 @@ impÜt
 
 25 
 mšio
- "github.com/minio/minio-go"
+ "github.com/jazzsir/minio-go"
 
 28 
 func
@@ -42605,7 +42605,7 @@ impÜt
 
 26 
 mšio
- "github.com/minio/minio-go"
+ "github.com/jazzsir/minio-go"
 
 29 
 func
@@ -44419,7 +44419,7 @@ impÜt
 
 29 
 mšio
- "github.com/minio/minio-go"
+ "github.com/jazzsir/minio-go"
 
 32 
 func
@@ -44967,7 +44967,7 @@ impÜt
 
 26 
 mšio
- "github.com/minio/minio-go"
+ "github.com/jazzsir/minio-go"
 
 29 
 func
@@ -45707,7 +45707,7 @@ impÜt
 
 28 
 mšio
- "github.com/minio/minio-go"
+ "github.com/jazzsir/minio-go"
 
 31 
 func
@@ -46383,7 +46383,7 @@ humªize
 
 43 
 mšio
- "github.com/minio/minio-go"
+ "github.com/jazzsir/minio-go"
 
 44 
 log
@@ -107387,7 +107387,7 @@ pŞicy
 
 20 
 	gimpÜt
- "github.com/minio/minio-go/pkg/set"
+ "github.com/jazzsir/minio-go/pkg/set"
 
 23 
 ty³

@@ -40,9 +40,9 @@ import (
 	"time"
 
 	"github.com/golang/glog"
-	"github.com/minio/minio-go/pkg/credentials"
-	"github.com/minio/minio-go/pkg/s3signer"
-	"github.com/minio/minio-go/pkg/s3utils"
+	"github.com/jazzsir/minio-go/pkg/credentials"
+	"github.com/jazzsir/minio-go/pkg/s3signer"
+	"github.com/jazzsir/minio-go/pkg/s3utils"
 	"golang.org/x/net/publicsuffix"
 )
 

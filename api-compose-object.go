@@ -28,8 +28,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/minio/minio-go/pkg/encrypt"
-	"github.com/minio/minio-go/pkg/s3utils"
+	"github.com/jazzsir/minio-go/pkg/encrypt"
+	"github.com/jazzsir/minio-go/pkg/s3utils"
 )
 
 // DestinationInfo - type with information about the object to be
