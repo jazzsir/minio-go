@@ -24,6 +24,7 @@ import (
 	"strings"
 	"time"
 
+	"github.com/golang/glog"
 	"github.com/jazzsir/minio-go/pkg/s3utils"
 )
 
@@ -34,6 +35,7 @@ func (c Client) BucketExists(bucketName string) (bool, error) {
 		return false, err
 	}
 
+	glog.Infof("HBSEO  BucketExists bucketName %s\n", bucketName)
 	// Execute HEAD on bucketName.
 	resp, err := c.executeMethod(context.Background(), "HEAD", requestMetadata{
 		bucketName:       bucketName,
@@ -41,17 +43,20 @@ func (c Client) BucketExists(bucketName string) (bool, error) {
 	})
 	defer closeResponse(resp)
 	if err != nil {
+		glog.Infof("HBSEO  BucketExists err != nil\n")
 		if ToErrorResponse(err).Code == "NoSuchBucket" {
 			return false, nil
 		}
 		return false, err
 	}
 	if resp != nil {
+		glog.Infof("HBSEO  BucketExists resp != nil\n")
 		resperr := httpRespToErrorResponse(resp, bucketName, "")
 		if ToErrorResponse(resperr).Code == "NoSuchBucket" {
 			return false, nil
 		}
 		if resp.StatusCode != http.StatusOK {
+			glog.Infof("HBSEO  BucketExists resp.StatusCode != http.StatusOK\n")
 			return false, httpRespToErrorResponse(resp, bucketName, "")
 		}
 	}

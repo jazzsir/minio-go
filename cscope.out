@@ -1,4 +1,4 @@
-cscope 15 $HOME/go/src/github.com/jazzsir/minio-go               0000751293
+cscope 15 $HOME/go/src/github.com/jazzsir/minio-go               0000752155
 	@/home1/irteamsu/go/src/github.com/jazzsir/minio-go/.travis.yml
 
 1 
@@ -27153,15 +27153,25 @@ G‘RegiÚFromURL
 »giÚ
 
 
-312 
+310 
+glog
+.
+Infof
+("HBSEO…riv©eNew cÊt.»giÚ %s\n", 
 şÁ
 .
-buck‘LocCache
+»giÚ
+)
+
+313 
+	gşÁ
+.
+	gbuck‘LocCache
  = 
 ÃwBuck‘LoÿtiÚCache
 ()
 
-315 
+316 
 şÁ
 .
 ¿ndom
@@ -27185,19 +27195,19 @@ UTC
 UnixNªo
 ())})
 
-319 
+320 
 şÁ
 .
 lookup
  =†ookup
 
-321  
+322  
 şÁ
 , 
 	gn
 
 
-325 
+326 
 	$func
  (
 c
@@ -27213,31 +27223,31 @@ Cl›Á
 ­pV”siÚ
  string) {
 
-327 
+328 
 ­pName
  !ğ"" && 
 ­pV”siÚ
  != "" {
 
-328 
+329 
 c
 .
 ­pInfo
  = struct {
 
-329 
+330 
 ­pName
  
 ¡ršg
 
 
-330 
+331 
 ­pV”siÚ
  
 ¡ršg
 
 
-332 
+333 
 c
 .
 ­pInfo
@@ -27245,7 +27255,7 @@ c
 ­pName
  =‡ppName
 
-333 
+334 
 c
 .
 ­pInfo
@@ -27253,11 +27263,11 @@ c
 ­pV”siÚ
  =‡ppVersion
 
-335 
+336 
 	}
 }
 
-338 
+339 
 	$func
  (
 c
@@ -27273,7 +27283,7 @@ h‰p
 RoundTr³r
 ) {
 
-353 
+354 
 c
 .
 h‰pCl›Á
@@ -27281,7 +27291,7 @@ h‰pCl›Á
 n
  {
 
-354 
+355 
 c
 .
 h‰pCl›Á
@@ -27291,11 +27301,11 @@ T¿n¥Üt
 cu¡omHTTPT¿n¥Üt
 
 
-356 
+357 
 	}
 }
 
-359 
+360 
 	$func
  (
 c
@@ -27311,13 +27321,13 @@ io
 Wr™”
 ) {
 
-361 
+362 
 ouutSŒ—m
  =ğ
 n
  {
 
-362 
+363 
 ouutSŒ—m
  = 
 os
@@ -27325,7 +27335,7 @@ os
 Stdout
 
 
-365 
+366 
 c
 .
 ŒaûOuut
@@ -27333,7 +27343,7 @@ c
 ouutSŒ—m
 
 
-368 
+369 
 c
 .
 isT¿ûEÇbËd
@@ -27341,11 +27351,11 @@ isT¿ûEÇbËd
 Œue
 
 
-369 
+370 
 	}
 }
 
-372 
+373 
 	$func
  (
 c
@@ -27355,7 +27365,7 @@ Cl›Á
 	$T¿ûOff
 () {
 
-374 
+375 
 c
 .
 isT¿ûEÇbËd
@@ -27363,11 +27373,11 @@ isT¿ûEÇbËd
 çl£
 
 
-375 
+376 
 	}
 }
 
-382 
+383 
 	$func
  (
 c
@@ -27381,7 +27391,7 @@ acûË¿‹Endpošt
 ¡ršg
 ) {
 
-383 
+384 
 s3uts
 .
 	`IsAmazÚEndpošt
@@ -27391,7 +27401,7 @@ c
 ’dpoštURL
 ) {
 
-384 
+385 
 c
 .
 s3AcûË¿‹Endpošt
@@ -27399,11 +27409,11 @@ s3AcûË¿‹Endpošt
 acûË¿‹Endpošt
 
 
-386 
+387 
 	}
 }
 
-394 
+395 
 	$func
  (
 c
@@ -27427,7 +27437,7 @@ hashSums
 by‹
 ) {
 
-395 
+396 
 hashSums
  = 
 	`make
@@ -27439,7 +27449,7 @@ m­
 by‹
 )
 
-396 
+397 
 hashAlgos
  = 
 	`make
@@ -27453,7 +27463,7 @@ hash
 Hash
 )
 
-397 
+398 
 c
 .
 ov”rideSigÃrTy³
@@ -27461,13 +27471,13 @@ ov”rideSigÃrTy³
 	`IsV4
 () {
 
-398 
+399 
 c
 .
 £cu»
  {
 
-399 
+400 
 hashAlgos
 ["md5"] = 
 md5
@@ -27475,7 +27485,7 @@ md5
 	`New
 ()
 
-401 
+402 
 hashAlgos
 ["sha256"] = 
 sha256
@@ -27483,7 +27493,7 @@ sha256
 	`New
 ()
 
-404 
+405 
 c
 .
 ov”rideSigÃrTy³
@@ -27491,7 +27501,7 @@ ov”rideSigÃrTy³
 	`IsAnÚymous
 () {
 
-405 
+406 
 hashAlgos
 ["md5"] = 
 md5
@@ -27499,41 +27509,41 @@ md5
 	`New
 ()
 
-408  
+409  
 hashAlgos
 , 
 hashSums
 
 
-409 
+410 
 	}
 }
 
-412 
+413 
 ty³
  
 »que¡M‘ad©a
  struct {
 
-414 
+415 
 ´esignURL
  
 boŞ
 
 
-417 
+418 
 buck‘Name
  
 ¡ršg
 
 
-418 
+419 
 objeùName
  
 ¡ršg
 
 
-419 
+420 
 qu”yV®ues
  
 	mu¾
@@ -27541,7 +27551,7 @@ qu”yV®ues
 V®ues
 
 
-420 
+421 
 cu¡omH—d”
  
 	mh‰p
@@ -27549,19 +27559,19 @@ cu¡omH—d”
 H—d”
 
 
-421 
+422 
 expœes
  
 št64
 
 
-424 
+425 
 buck‘LoÿtiÚ
  
 ¡ršg
 
 
-425 
+426 
 cÚ‹ÁBody
  
 	mio
@@ -27569,25 +27579,25 @@ cÚ‹ÁBody
 R—d”
 
 
-426 
+427 
 cÚ‹ÁL’gth
  
 št64
 
 
-427 
+428 
 cÚ‹ÁMD5Ba£64
  
 ¡ršg
 
 
-428 
+429 
 cÚ‹ÁSHA256Hex
  
 	m¡ršg
 
 
-432 
+433 
 	$func
  (
 c
@@ -27609,7 +27619,7 @@ Re¥Ú£
 ”rÜ
  {
 
-434 
+435 
 _
 , 
 ”r
@@ -27623,17 +27633,17 @@ c
 ŒaûOuut
 , "---------START-HTTP---------")
 
-435 
+436 
 ”r
  !ğ
 n
  {
 
-436  
+437  
 ”r
 
 
-440 
+441 
 ÜigAuth
  :ğ
 »q
@@ -27643,11 +27653,11 @@ H—d”
 	`G‘
 ("Authorization")
 
-441 
+442 
 ÜigAuth
  != "" {
 
-442 
+443 
 »q
 .
 H—d”
@@ -27659,7 +27669,7 @@ H—d”
 ÜigAuth
 ))
 
-446 
+447 
 »qT¿û
 , 
 ”r
@@ -27673,17 +27683,17 @@ h‰put
 çl£
 )
 
-447 
+448 
 ”r
  !ğ
 n
  {
 
-448  
+449  
 ”r
 
 
-452 
+453 
 _
 , 
 ”r
@@ -27701,17 +27711,17 @@ c
 »qT¿û
 ))
 
-453 
+454 
 ”r
  !ğ
 n
  {
 
-454  
+455  
 ”r
 
 
-458 
+459 
 v¬
  
 »¥T¿û
@@ -27719,7 +27729,7 @@ v¬
 by‹
 
 
-461 
+462 
 »¥
 .
 StusCode
@@ -27729,7 +27739,7 @@ h‰p
 StusOK
  &&
 
-462 
+463 
 »¥
 .
 StusCode
@@ -27739,7 +27749,7 @@ h‰p
 StusP¬tŸlCÚ‹Á
  &&
 
-463 
+464 
 »¥
 .
 StusCode
@@ -27749,7 +27759,7 @@ h‰p
 StusNoCÚ‹Á
  {
 
-464 
+465 
 »¥T¿û
 , 
 ”r
@@ -27763,17 +27773,17 @@ h‰put
 Œue
 )
 
-465 
+466 
 ”r
  !ğ
 n
  {
 
-466  
+467  
 ”r
 
 
-469 
+470 
 »¥T¿û
 , 
 ”r
@@ -27787,17 +27797,17 @@ h‰put
 çl£
 )
 
-470 
+471 
 ”r
  !ğ
 n
  {
 
-471  
+472  
 ”r
 
 
-476 
+477 
 _
 , 
 ”r
@@ -27819,17 +27829,17 @@ c
 »¥T¿û
 ), "\r\n"))
 
-477 
+478 
 ”r
  !ğ
 n
  {
 
-478  
+479  
 ”r
 
 
-482 
+483 
 _
 , 
 ”r
@@ -27843,25 +27853,25 @@ c
 ŒaûOuut
 , "---------END-HTTP---------")
 
-483 
+484 
 ”r
  !ğ
 n
  {
 
-484  
+485  
 ”r
 
 
-488  
+489  
 n
 
 
-489 
+490 
 	}
 }
 
-492 
+493 
 	$func
  (
 c
@@ -27879,7 +27889,7 @@ Re¥Ú£
 ”rÜ
 ) {
 
-493 
+494 
 »¥
 , 
 ”r
@@ -27893,13 +27903,13 @@ h‰pCl›Á
 »q
 )
 
-494 
+495 
 ”r
  !ğ
 n
  {
 
-496 
+497 
 u¾E¼
 , 
 ok
@@ -27911,7 +27921,7 @@ u¾
 E¼Ü
 ); ok {
 
-497 
+498 
 ¡ršgs
 .
 	`CÚšs
@@ -27923,7 +27933,7 @@ E¼
 	`E¼Ü
 (), "EOF") {
 
-498  
+499  
 n
 , &
 u¾
@@ -27931,19 +27941,19 @@ u¾
 E¼Ü
 {
 
-499 
+500 
 Op
 : 
 u¾E¼
 .Op,
 
-500 
+501 
 URL
 : 
 u¾E¼
 .URL,
 
-501 
+502 
 E¼
 : 
 ”rÜs
@@ -27955,25 +27965,25 @@ u¾E¼
 URL
  + ". Retry‡gain."),
 
-505  
+506  
 n
 , 
 ”r
 
 
-509 
+510 
 »¥
  =ğ
 n
  {
 
-510 
+511 
 msg
  :ğ"Re¥Ú£ i em±y. " + 
 »pÜtIssue
 
 
-511  
+512  
 n
 , 
 	`E¼Inv®idArgum’t
@@ -27981,13 +27991,13 @@ n
 msg
 )
 
-515 
+516 
 c
 .
 isT¿ûEÇbËd
  {
 
-516 
+517 
 ”r
  = 
 c
@@ -27999,53 +28009,53 @@ c
 »¥
 )
 
-517 
+518 
 ”r
  !ğ
 n
  {
 
-518  
+519  
 n
 , 
 ”r
 
 
-522  
+523  
 »¥
 , 
 n
 
 
-523 
+524 
 	}
 }
 
-526 
+527 
 v¬
  
 	gsucûssStus
  = []{
 
-527 
+528 
 h‰p
 .
 StusOK
 ,
 
-528 
+529 
 h‰p
 .
 StusNoCÚ‹Á
 ,
 
-529 
+530 
 h‰p
 .
 StusP¬tŸlCÚ‹Á
 ,
 
-535 
+536 
 	$func
  (
 c
@@ -28079,7 +28089,7 @@ Re¥Ú£
 ”rÜ
 ) {
 
-536 
+537 
 v¬
  
 isR‘ryabË
@@ -28087,7 +28097,7 @@ isR‘ryabË
 boŞ
 
 
-537 
+538 
 v¬
  
 bodyS“k”
@@ -28097,7 +28107,7 @@ io
 S“k”
 
 
-538 
+539 
 v¬
  
 »qR‘ry
@@ -28105,7 +28115,17 @@ v¬
 MaxR‘ry
 
 
-540 
+541 
+glog
+.
+	`Infof
+("HBSEOƒxecu‹M‘hod buck‘Nam%s\n", 
+m‘ad©a
+.
+buck‘Name
+)
+
+542 
 m‘ad©a
 .
 cÚ‹ÁBody
@@ -28113,7 +28133,7 @@ cÚ‹ÁBody
 n
  {
 
-542 
+544 
 bodyS“k”
 , 
 isR‘ryabË
@@ -28127,11 +28147,11 @@ io
 S“k”
 )
 
-543 
+545 
 bodyS“k”
  {
 
-544 
+546 
 os
 .
 Stdš
@@ -28141,21 +28161,21 @@ Stdout
 Std”r
 :
 
-545 
+547 
 isR‘ryabË
  = 
 çl£
 
 
-548 !
+550 !
 isR‘ryabË
  {
 
-549 
+551 
 »qR‘ry
  = 1
 
-555 
+557 
 bodyClo£r
 , 
 ok
@@ -28169,11 +28189,11 @@ io
 Clo£r
 )
 
-556 
+558 
 ok
  {
 
-557 
+559 
 deãr
  
 bodyClo£r
@@ -28181,7 +28201,7 @@ bodyClo£r
 	`Clo£
 ()
 
-562 
+564 
 dÚeCh
  :ğ
 	`make
@@ -28189,7 +28209,7 @@ dÚeCh
 chª
  struct{}, 1)
 
-565 
+567 
 deãr
  
 	`şo£
@@ -28197,7 +28217,7 @@ deãr
 dÚeCh
 )
 
-570 
+572 
 ¿nge
  
 c
@@ -28215,11 +28235,17 @@ MaxJ™‹r
 dÚeCh
 ) {
 
-575 
+577 
+glog
+.
+	`Infof
+("HBSEOƒxecuteMethod‚ewRetryTimer\n")
+
+578 
 isR‘ryabË
  {
 
-577 
+580 
 _
 , 
 ”r
@@ -28231,13 +28257,13 @@ bodyS“k”
 n
  {
 
-579  
+582  
 n
 , 
 ”r
 
 
-584 
+587 
 v¬
  
 »q
@@ -28247,7 +28273,7 @@ h‰p
 Reque¡
 
 
-585 
+588 
 »q
 , 
 ”r
@@ -28261,13 +28287,13 @@ m‘hod
 m‘ad©a
 )
 
-586 
+589 
 ”r
  !ğ
 n
  {
 
-587 
+590 
 ”rRe¥Ú£
  :ğ
 	`ToE¼ÜRe¥Ú£
@@ -28275,7 +28301,7 @@ n
 ”r
 )
 
-588 
+591 
 	`isS3CodeR‘ryabË
 (
 ”rRe¥Ú£
@@ -28283,13 +28309,13 @@ n
 Code
 ) {
 
-591  
+594  
 n
 , 
 ”r
 
 
-595 
+598 
 »q
  =„eq.
 	`W™hCÚ‹xt
@@ -28297,7 +28323,7 @@ n
 ùx
 )
 
-598 
+601 
 »s
 , 
 ”r
@@ -28307,25 +28333,25 @@ c
 »q
 )
 
-599 
+602 
 ”r
  !ğ
 n
  {
 
-601 
+604 
 	`isHTTPReqE¼ÜR‘ryabË
 (
 ”r
 ) {
 
-605  
+608  
 n
 , 
 ”r
 
 
-609 
+612 
 _
 , 
 h‰pStus
@@ -28335,7 +28361,7 @@ h‰pStus
 sucûssStus
  {
 
-610 
+613 
 h‰pStus
  =ğ
 »s
@@ -28343,13 +28369,13 @@ h‰pStus
 StusCode
  {
 
-611  
+614  
 »s
 , 
 n
 
 
-616 
+619 
 ”rBodyBy‹s
 , 
 ”r
@@ -28363,25 +28389,25 @@ iout
 Body
 )
 
-618 
+621 
 	`şo£Re¥Ú£
 (
 »s
 )
 
-619 
+622 
 ”r
  !ğ
 n
  {
 
-620  
+623  
 n
 , 
 ”r
 
 
-624 
+627 
 ”rBodyS“k”
  :ğ
 by‹s
@@ -28391,7 +28417,7 @@ by‹s
 ”rBodyBy‹s
 )
 
-625 
+628 
 »s
 .
 Body
@@ -28403,7 +28429,7 @@ iout
 ”rBodyS“k”
 )
 
-628 
+631 
 ”rRe¥Ú£
  :ğ
 	`ToE¼ÜRe¥Ú£
@@ -28419,13 +28445,13 @@ buck‘Name
 objeùName
 ))
 
-631 
+634 
 ”rBodyS“k”
 .
 	`S“k
 (0, 0)
 
-632 
+635 
 »s
 .
 Body
@@ -28437,7 +28463,27 @@ iout
 ”rBodyS“k”
 )
 
-640 
+643 
+glog
+.
+	`Infof
+("HBSEOƒxecu‹M‘hod‚ewR‘ryTim” c.»giÚ:%s\n", 
+c
+.
+»giÚ
+)
+
+644 
+glog
+.
+	`Infof
+("HBSEOƒxecu‹M‘hod‚ewR‘ryTim” m‘ad©a.buck‘LoÿtiÚ:%s\n", 
+m‘ad©a
+.
+buck‘LoÿtiÚ
+)
+
+645 
 m‘ad©a
 .
 buck‘LoÿtiÚ
@@ -28447,13 +28493,33 @@ c
 »giÚ
  == "" {
 
-641 
+646 
+glog
+.
+	`Infof
+("HBSEOƒxecu‹M‘hod‚ewR‘ryTim”ƒ¼Re¥Ú£.Code:%s\n", 
+”rRe¥Ú£
+.
+Code
+)
+
+647 
 ”rRe¥Ú£
 .
 Code
  == "AuthorizationHeaderMalformed" ||ƒrrResponse.Code == "InvalidRegion" {
 
-642 
+648 
+glog
+.
+	`Infof
+("HBSEOƒxecu‹M‘hod‚ewR‘ryTim”ƒ¼Re¥Ú£.RegiÚ:%s\n", 
+”rRe¥Ú£
+.
+RegiÚ
+)
+
+649 
 m‘ad©a
 .
 buck‘Name
@@ -28463,7 +28529,7 @@ buck‘Name
 RegiÚ
  != "" {
 
-644 
+651 
 _
 , 
 ÿchedLoÿtiÚE¼Ü
@@ -28481,7 +28547,13 @@ buck‘Name
 çl£
  {
 
-645 
+652 
+glog
+.
+	`Infof
+("HBSEOƒxecuteMethod‚ewRetryTimer cachedLocationError != false\n")
+
+653 
 c
 .
 buck‘LocCache
@@ -28497,7 +28569,7 @@ buck‘Name
 RegiÚ
 )
 
-653 
+661 
 	`isS3CodeR‘ryabË
 (
 ”rRe¥Ú£
@@ -28505,7 +28577,7 @@ RegiÚ
 Code
 ) {
 
-658 
+666 
 	`isHTTPStusR‘ryabË
 (
 »s
@@ -28513,17 +28585,17 @@ Code
 StusCode
 ) {
 
-665  
+673  
 »s
 , 
 ”r
 
 
-666 
+674 
 	}
 }
 
-669 
+677 
 	$func
  (
 c
@@ -28551,15 +28623,15 @@ Reque¡
 ”rÜ
 ) {
 
-671 
+679 
 m‘hod
  == "" {
 
-672 
+680 
 m‘hod
  = "POST"
 
-675 
+683 
 loÿtiÚ
  :ğ
 m‘ad©a
@@ -28567,17 +28639,25 @@ m‘ad©a
 buck‘LoÿtiÚ
 
 
-676 
+684 
+glog
+.
+	`Infof
+("HBSEO‚ewReque¡†oÿtiÚ-1:% \n", 
+loÿtiÚ
+)
+
+685 
 loÿtiÚ
  == "" {
 
-677 
+686 
 m‘ad©a
 .
 buck‘Name
  != "" {
 
-679 
+688 
 loÿtiÚ
 , 
 ”r
@@ -28591,13 +28671,21 @@ m‘ad©a
 buck‘Name
 )
 
-680 
+689 
+glog
+.
+	`Infof
+("HBSEO‚ewReque¡†oÿtiÚ-2:% \n", 
+loÿtiÚ
+)
+
+690 
 ”r
  !ğ
 n
  {
 
-681 
+691 
 	`ToE¼ÜRe¥Ú£
 (
 ”r
@@ -28605,17 +28693,27 @@ n
 Code
  != "AccessDenied" {
 
-682  
+692  
 n
 , 
 ”r
 
 
-689 
+699 
+glog
+.
+	`Infof
+("HBSEO‚ewReque¡ c.»giÚ:% \n", 
+c
+.
+»giÚ
+)
+
+700 
 loÿtiÚ
  == "" {
 
-690 
+701 
 loÿtiÚ
  = 
 	`g‘DeçuÉLoÿtiÚ
@@ -28627,7 +28725,7 @@ c
 »giÚ
 )
 
-695 
+706 
 isVœtu®Ho¡
  :ğ
 c
@@ -28641,7 +28739,7 @@ m‘ad©a
 buck‘Name
 )
 
-698 
+709 
 rg‘URL
 , 
 ”r
@@ -28663,19 +28761,19 @@ isVœtu®Ho¡
 qu”yV®ues
 )
 
-699 
+710 
 ”r
  !ğ
 n
  {
 
-700  
+711  
 n
 , 
 ”r
 
 
-704 
+715 
 »q
 , 
 ”r
@@ -28693,19 +28791,19 @@ m‘hod
 n
 )
 
-705 
+716 
 ”r
  !ğ
 n
  {
 
-706  
+717  
 n
 , 
 ”r
 
 
-710 
+721 
 v®ue
 , 
 ”r
@@ -28717,23 +28815,23 @@ c
 	`G‘
 ()
 
-711 
+722 
 ”r
  !ğ
 n
  {
 
-712  
+723  
 n
 , 
 ”r
 
 
-715 
+726 
 	`v¬
  (
 
-716 
+727 
 sigÃrTy³
  = 
 v®ue
@@ -28741,7 +28839,7 @@ v®ue
 SigÃrTy³
 
 
-717 
+728 
 acûssKeyID
  = 
 v®ue
@@ -28749,7 +28847,7 @@ v®ue
 AcûssKeyID
 
 
-718 
+729 
 £ü‘AcûssKey
  = 
 v®ue
@@ -28757,7 +28855,7 @@ v®ue
 Seü‘AcûssKey
 
 
-719 
+730 
 £ssiÚTok’
  = 
 v®ue
@@ -28765,7 +28863,7 @@ v®ue
 SessiÚTok’
 
 
-723 
+734 
 c
 .
 ov”rideSigÃrTy³
@@ -28775,7 +28873,7 @@ ov”rideSigÃrTy³
 SigÇtu»DeçuÉ
  {
 
-724 
+735 
 sigÃrTy³
  = 
 c
@@ -28783,7 +28881,7 @@ c
 ov”rideSigÃrTy³
 
 
-729 
+740 
 v®ue
 .
 SigÃrTy³
@@ -28793,7 +28891,7 @@ SigÃrTy³
 SigÇtu»AnÚymous
  {
 
-730 
+741 
 sigÃrTy³
  = 
 üed’tŸls
@@ -28801,7 +28899,7 @@ sigÃrTy³
 SigÇtu»AnÚymous
 
 
-734 
+745 
 m‘ad©a
 .
 expœes
@@ -28809,25 +28907,25 @@ expœes
 ´esignURL
  {
 
-735 
+746 
 sigÃrTy³
 .
 	`IsAnÚymous
 () {
 
-736  
+747  
 n
 , 
 	`E¼Inv®idArgum’t
 ("Presigned URLs cannot be generated with‡nonymous credentials.")
 
-738 
+749 
 sigÃrTy³
 .
 	`IsV2
 () {
 
-740 
+751 
 »q
  = 
 s3sigÃr
@@ -28845,13 +28943,13 @@ expœes
 isVœtu®Ho¡
 )
 
-741 } 
+752 } 
 sigÃrTy³
 .
 	`IsV4
 () {
 
-743 
+754 
 »q
  = 
 s3sigÃr
@@ -28871,13 +28969,13 @@ m‘ad©a
 expœes
 )
 
-745  
+756  
 »q
 , 
 n
 
 
-749 
+760 
 c
 .
 	`£tU£rAg’t
@@ -28885,7 +28983,7 @@ c
 »q
 )
 
-752 
+763 
 k
 , 
 v
@@ -28897,7 +28995,7 @@ m‘ad©a
 cu¡omH—d”
  {
 
-753 
+764 
 »q
 .
 H—d”
@@ -28909,13 +29007,13 @@ k
 v
 [0])
 
-760 
+771 
 m‘ad©a
 .
 cÚ‹ÁL’gth
  == 0 {
 
-761 
+772 
 »q
 .
 Body
@@ -28923,7 +29021,7 @@ Body
 n
 
 
-763 
+774 
 »q
 .
 Body
@@ -28937,7 +29035,7 @@ m‘ad©a
 cÚ‹ÁBody
 )
 
-767 
+778 
 »q
 .
 CÚ‹ÁL’gth
@@ -28947,13 +29045,13 @@ m‘ad©a
 cÚ‹ÁL’gth
 
 
-768 
+779 
 »q
 .
 CÚ‹ÁL’gth
  <= -1 {
 
-770 
+781 
 »q
 .
 T¿nsãrEncodšg
@@ -28961,7 +29059,7 @@ T¿nsãrEncodšg
 ¡ršg
 {"chunked"}
 
-774 
+785 
 	`Ën
 (
 m‘ad©a
@@ -28969,7 +29067,7 @@ m‘ad©a
 cÚ‹ÁMD5Ba£64
 ) > 0 {
 
-775 
+786 
 »q
 .
 H—d”
@@ -28981,25 +29079,25 @@ m‘ad©a
 cÚ‹ÁMD5Ba£64
 )
 
-779 
+790 
 sigÃrTy³
 .
 	`IsAnÚymous
 () {
 
-780  
+791  
 »q
 , 
 n
 
 
-784 
+795 
 sigÃrTy³
 .
 	`IsV2
 ():
 
-786 
+797 
 »q
  = 
 s3sigÃr
@@ -29013,7 +29111,7 @@ acûssKeyID
 isVœtu®Ho¡
 )
 
-787 
+798 
 m‘ad©a
 .
 objeùName
@@ -29029,7 +29127,7 @@ c
 £cu»
 :
 
-791 
+802 
 »q
  = 
 s3sigÃr
@@ -29039,7 +29137,7 @@ s3sigÃr
 acûssKeyID
 ,
 
-792 
+803 
 £ü‘AcûssKey
 , 
 £ssiÚTok’
@@ -29057,19 +29155,19 @@ time
 	`UTC
 ())
 
-795 
+806 
 shaH—d”
  :ğ
 unsigÃdPaylßd
 
 
-796 
+807 
 m‘ad©a
 .
 cÚ‹ÁSHA256Hex
  != "" {
 
-797 
+808 
 shaH—d”
  = 
 m‘ad©a
@@ -29077,7 +29175,7 @@ m‘ad©a
 cÚ‹ÁSHA256Hex
 
 
-799 
+810 
 »q
 .
 H—d”
@@ -29087,7 +29185,7 @@ H—d”
 shaH—d”
 )
 
-802 
+813 
 »q
  = 
 s3sigÃr
@@ -29103,17 +29201,17 @@ acûssKeyID
 loÿtiÚ
 )
 
-806  
+817  
 »q
 , 
 n
 
 
-807 
+818 
 	}
 }
 
-810 
+821 
 	$func
  (
 c
@@ -29129,7 +29227,7 @@ h‰p
 Reque¡
 ) {
 
-811 
+822 
 »q
 .
 H—d”
@@ -29139,7 +29237,7 @@ H—d”
 lib¿ryU£rAg’t
 )
 
-812 
+823 
 c
 .
 ­pInfo
@@ -29149,7 +29247,7 @@ c
 ­pV”siÚ
  != "" {
 
-813 
+824 
 »q
 .
 H—d”
@@ -29167,11 +29265,11 @@ c
 ­pV”siÚ
 )
 
-815 
+826 
 	}
 }
 
-818 
+829 
 	$func
  (
 c
@@ -29203,7 +29301,7 @@ URL
 ”rÜ
 ) {
 
-819 
+830 
 ho¡
  :ğ
 c
@@ -29213,7 +29311,7 @@ c
 Ho¡
 
 
-821 
+832 
 s3uts
 .
 	`IsAmazÚEndpošt
@@ -29223,7 +29321,7 @@ c
 ’dpoštURL
 ) {
 
-822 
+833 
 c
 .
 s3AcûË¿‹Endpošt
@@ -29231,7 +29329,7 @@ s3AcûË¿‹Endpošt
 buck‘Name
  != "" {
 
-825 
+836 
 ¡ršgs
 .
 	`CÚšs
@@ -29239,7 +29337,7 @@ buck‘Name
 buck‘Name
 , ".") {
 
-826  
+837  
 n
 , 
 	`E¼T¿nsãrAcûË¿tiÚBuck‘
@@ -29247,7 +29345,7 @@ n
 buck‘Name
 )
 
-831 
+842 
 ho¡
  = 
 c
@@ -29255,7 +29353,7 @@ c
 s3AcûË¿‹Endpošt
 
 
-834 !
+845 !
 s3uts
 .
 	`IsAmazÚFIPSEndpošt
@@ -29265,7 +29363,7 @@ c
 ’dpoštURL
 ) {
 
-836 
+847 
 ho¡
  = 
 	`g‘S3Endpošt
@@ -29273,7 +29371,7 @@ ho¡
 buck‘LoÿtiÚ
 )
 
-842 
+853 
 scheme
  :ğ
 c
@@ -29283,7 +29381,7 @@ c
 Scheme
 
 
-847 
+858 
 h
 , 
 p
@@ -29299,19 +29397,19 @@ ho¡
 n
  {
 
-848 
+859 
 scheme
  =ğ"h‰p" && 
 p
  == "80" || scheme == "https" &&… == "443" {
 
-849 
+860 
 ho¡
  = 
 h
 
 
-853 
+864 
 u¾SŒ
  :ğ
 scheme
@@ -29319,15 +29417,15 @@ scheme
 ho¡
  + "/"
 
-856 
+867 
 buck‘Name
  != "" {
 
-860 
+871 
 isVœtu®Ho¡StyË
  {
 
-861 
+872 
 u¾SŒ
  = 
 scheme
@@ -29337,11 +29435,11 @@ buck‘Name
 ho¡
  + "/"
 
-862 
+873 
 objeùName
  != "" {
 
-863 
+874 
 u¾SŒ
  = u¾SŒ + 
 s3uts
@@ -29351,17 +29449,17 @@ s3uts
 objeùName
 )
 
-867 
+878 
 u¾SŒ
  = u¾SŒ + 
 buck‘Name
  + "/"
 
-868 
+879 
 objeùName
  != "" {
 
-869 
+880 
 u¾SŒ
  = u¾SŒ + 
 s3uts
@@ -29371,13 +29469,13 @@ s3uts
 objeùName
 )
 
-875 
+886 
 	`Ën
 (
 qu”yV®ues
 ) > 0 {
 
-876 
+887 
 u¾SŒ
  = u¾SŒ + "?" + 
 s3uts
@@ -29387,7 +29485,7 @@ s3uts
 qu”yV®ues
 )
 
-879  
+890  
 u¾
 .
 	`P¬£
@@ -29395,11 +29493,11 @@ u¾
 u¾SŒ
 )
 
-880 
+891 
 	}
 }
 
-883 
+894 
 	$func
  (
 c
@@ -29419,15 +29517,15 @@ buck‘Name
 boŞ
  {
 
-884 
+895 
 buck‘Name
  == "" {
 
-885  
+896  
 çl£
 
 
-888 
+899 
 c
 .
 lookup
@@ -29435,11 +29533,11 @@ lookup
 Buck‘LookupDNS
  {
 
-889  
+900  
 Œue
 
 
-891 
+902 
 c
 .
 lookup
@@ -29447,11 +29545,11 @@ lookup
 Buck‘LookupP©h
  {
 
-892  
+903  
 çl£
 
 
-897  
+908  
 s3uts
 .
 	`IsVœtu®Ho¡SuµÜ‹d
@@ -29461,7 +29559,7 @@ u¾
 buck‘Name
 )
 
-898 
+909 
 	}
 }
 
@@ -30670,8 +30768,10 @@ g™hub
 .
 com
 /
+jazzsœ
+/
 mšio
-/mšio-
+-
 go
 ...
 

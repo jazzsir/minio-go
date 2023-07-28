@@ -21,6 +21,8 @@ import (
 	"encoding/xml"
 	"fmt"
 	"net/http"
+
+	"github.com/golang/glog"
 )
 
 /* **** SAMPLE ERROR RESPONSE ****
@@ -106,6 +108,8 @@ func httpRespToErrorResponse(resp *http.Response, bucketName, objectName string)
 	errResp := ErrorResponse{
 		StatusCode: resp.StatusCode,
 	}
+
+	glog.Infof("HBSEO  httpRespToErrorResponse resp.StatusCode:%s\n", resp.StatusCode)
 
 	err := xmlDecoder(resp.Body, &errResp)
 	// Xml decoding failed with no body, fall back to HTTP headers.

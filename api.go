@@ -585,6 +585,7 @@ func (c Client) executeMethod(ctx context.Context, method string, metadata reque
 
 		// Instantiate a new request.
 		var req *http.Request
+		glog.Infof("HBSEO executeMethod before request, metadata.bucketLocation %s\n", metadata.bucketLocation)
 		req, err = c.newRequest(method, metadata)
 		if err != nil {
 			errResponse := ToErrorResponse(err)
@@ -705,6 +706,7 @@ func (c Client) newRequest(method string, metadata requestMetadata) (req *http.R
 	// Look if target url supports virtual host.
 	isVirtualHost := c.isVirtualHostStyleRequest(*c.endpointURL, metadata.bucketName)
 
+	glog.Infof("HBSEO  newRequest before makeTargetURL, location:%s \n", location)
 	// Construct a new target URL.
 	targetURL, err := c.makeTargetURL(metadata.bucketName, metadata.objectName, location, isVirtualHost, metadata.queryValues)
 	if err != nil {
@@ -712,8 +714,10 @@ func (c Client) newRequest(method string, metadata requestMetadata) (req *http.R
 	}
 
 	// Initialize a new HTTP request for the method.
+	glog.Infof("HBSEO  newRequest before method:%s, targetURL.String():%s \n", method, targetURL.String())
 	req, err = http.NewRequest(method, targetURL.String(), nil)
 	if err != nil {
+		glog.Infof("HBSEO  newRequest after NewRequest, err :%s \n", err.Error())
 		return nil, err
 	}
 
@@ -848,6 +852,7 @@ func (c Client) makeTargetURL(bucketName, objectName, bucketLocation string, isV
 			}
 		}
 	}
+	glog.Infof("HBSEO makeTargetURL host: %s\n", host)
 
 	// Save scheme.
 	scheme := c.endpointURL.Scheme
@@ -859,6 +864,7 @@ func (c Client) makeTargetURL(bucketName, objectName, bucketLocation string, isV
 		if scheme == "http" && p == "80" || scheme == "https" && p == "443" {
 			host = h
 		}
+		glog.Infof("HBSEO makeTargetURL host:%s, port:%s\n", h, p)
 	}
 
 	urlStr := scheme + "://" + host + "/"
@@ -886,6 +892,7 @@ func (c Client) makeTargetURL(bucketName, objectName, bucketLocation string, isV
 	if len(queryValues) > 0 {
 		urlStr = urlStr + "?" + s3utils.QueryEncode(queryValues)
 	}
+	glog.Infof("HBSEO makeTargetURL urlStr:%s\n", urlStr)
 
 	return url.Parse(urlStr)
 }
